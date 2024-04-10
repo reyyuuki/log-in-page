@@ -1,0 +1,126 @@
+body {
+    background-image: url("minimal_squares.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Poppins";
+}
+
+.container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    padding: 70px;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255, 0.2);
+    box-shadow: 0px 0px 15px;
+    backdrop-filter: blur(30px);
+}
+
+.wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+
+h1 {
+    position: relative;
+    top: -40px;
+    left: 60px;
+    font-size: 40px;
+    font-weight: 1000;
+}
+
+#user {
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 15px;
+}
+
+#pass {
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 15px;
+}
+
+.username {
+    position: relative;
+    top: -40px;
+    color: white;
+    font-weight: 700;
+}
+
+.password {
+    position: relative;
+    top: -40px;
+    color: white;
+    font-weight: 700;
+}
+
+.btn {
+    position: relative;
+    padding: 7px;
+    border-radius: 15px;
+    background: black;
+    color: white;
+    border: transparent;
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size:15px;
+}
+.btn:hover{
+    background-color: white;
+    color:black;
+    transition: 1s ease;
+}
+
+#user:focus~.username,
+#user:valid~.username {
+    transform: translateY(-18px);
+    transition: 0.5s ease-in;
+    color: black;
+}
+
+#pass:focus~.password,
+#pass:valid~.password {
+    transform: translateY(-18px);
+    transition: 0.5s ease-in;
+    color: black;
+}
+
+#icon1 {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    color:white;
+}
+
+#icon2 {
+    position: absolute;
+    top: 72px;
+    right: 15px;
+    color:white;
+}
+#pass:focus~#icon2,
+#pass:valid~#icon2{
+    transition: 0.5s ease-in;
+    color: black;
+}
+#user:focus~#icon1,
+#user:valid~#icon1{
+    transition: 0.5s ease-in;
+    color: black;
+}
